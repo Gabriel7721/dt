@@ -15,7 +15,7 @@ jobs:
         image: mongo:6.0
         ports:
           - 27017:27017
-        options: >
+        options: >-
           --health-cmd="mongosh --eval 'db.stats()'"
           --health-interval=10s
           --health-timeout=5s
